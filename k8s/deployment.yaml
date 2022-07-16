@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ewr
+  name: mkhk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ewr
+      app: mkhk
   template:
     metadata:
       labels:
-        app: ewr
+        app: mkhk
     spec:
       containers:
-      - image: okteto.dev/ewr:latest
-        name: ewr
+      - image: okteto.dev/mkhk:latest
+        name: mkhk
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "0a8fc5a7-b2f0-4e20-b59f-08c74dc63baa"
+          value: "e28f6a8d-ef08-4fda-9a5d-a10b57633627"
         - name: Vless_Path
           value: "/acpourd"
         - name: Vmess_UUID
-          value: "0a8fc5a7-b2f0-4e20-b59f-08c74dc63baa"
+          value: "e28f6a8d-ef08-4fda-9a5d-a10b57633627"
         - name: Vmess_Path
           value: "/ueredeg"
         - name: Share_Path
