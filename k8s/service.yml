@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bgh
+  name: wsrf
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bgh"
+  - name: "wsrf"
     port: 8080
   selector:
-    app: bgh
+    app: wsrf
