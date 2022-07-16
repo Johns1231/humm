@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hun
+  name: bgh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hun
+      app: bgh
   template:
     metadata:
       labels:
-        app: hun
+        app: bgh
     spec:
       containers:
-      - image: okteto.dev/hun:latest
-        name: hun
+      - image: okteto.dev/bgh:latest
+        name: bgh
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "17bd4795-1380-46c8-87a4-8b3732619851"
+          value: "275a1a6b-7a09-4a5e-9c34-bd1276f5da81"
         - name: Vless_Path
-          value: "/eufgy"
+          value: "/dfgrt"
         - name: Vmess_UUID
-          value: "17bd4795-1380-46c8-87a4-8b3732619851"
+          value: "275a1a6b-7a09-4a5e-9c34-bd1276f5da81"
         - name: Vmess_Path
-          value: "/njkg"
+          value: "/vdsf"
         - name: Share_Path
           value: "/share233"
