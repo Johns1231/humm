@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bgh
+  name: wsrf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bgh
+      app: wsrf
   template:
     metadata:
       labels:
-        app: bgh
+        app: wsrf
     spec:
       containers:
-      - image: okteto.dev/bgh:latest
-        name: bgh
+      - image: okteto.dev/wsrf:latest
+        name: wsrf
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "275a1a6b-7a09-4a5e-9c34-bd1276f5da81"
+          value: "1e3fb5d0-3101-4a58-9158-ca3b4b67cc9f"
         - name: Vless_Path
-          value: "/dfgrt"
+          value: "/cxvgt"
         - name: Vmess_UUID
-          value: "275a1a6b-7a09-4a5e-9c34-bd1276f5da81"
+          value: "1e3fb5d0-3101-4a58-9158-ca3b4b67cc9f"
         - name: Vmess_Path
-          value: "/vdsf"
+          value: "/ewrfs"
         - name: Share_Path
           value: "/share233"
