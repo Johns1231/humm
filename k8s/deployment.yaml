@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wsrf
+  name: erwd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wsrf
+      app: erwd
   template:
     metadata:
       labels:
-        app: wsrf
+        app: erwd
     spec:
       containers:
-      - image: okteto.dev/wsrf:latest
-        name: wsrf
+      - image: okteto.dev/erwd:latest
+        name: erwd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "1e3fb5d0-3101-4a58-9158-ca3b4b67cc9f"
+          value: "0c63d9f3-29b0-4549-b331-9dbf277e5032"
         - name: Vless_Path
-          value: "/cxvgt"
+          value: "/dsfrt"
         - name: Vmess_UUID
-          value: "1e3fb5d0-3101-4a58-9158-ca3b4b67cc9f"
+          value: "0c63d9f3-29b0-4549-b331-9dbf277e5032"
         - name: Vmess_Path
-          value: "/ewrfs"
+          value: "/gfhu"
         - name: Share_Path
           value: "/share233"
