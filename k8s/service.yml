@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: erwd
+  name: rg4r
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "erwd"
+  - name: "rg4r"
     port: 8080
   selector:
-    app: erwd
+    app: rg4r
