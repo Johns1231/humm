@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: erwd
+  name: rg4r
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: erwd
+      app: rg4r
   template:
     metadata:
       labels:
-        app: erwd
+        app: rg4r
     spec:
       containers:
-      - image: okteto.dev/erwd:latest
-        name: erwd
+      - image: okteto.dev/rg4r:latest
+        name: rg4r
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "0c63d9f3-29b0-4549-b331-9dbf277e5032"
+          value: "ac50b8a3-b983-49eb-9fa8-1bea5b4b6c27"
         - name: Vless_Path
-          value: "/dsfrt"
+          value: "/tryj"
         - name: Vmess_UUID
-          value: "0c63d9f3-29b0-4549-b331-9dbf277e5032"
+          value: "ac50b8a3-b983-49eb-9fa8-1bea5b4b6c27"
         - name: Vmess_Path
-          value: "/gfhu"
+          value: "/cvby"
         - name: Share_Path
           value: "/share233"
