@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cvf
+  name: ewr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cvf
+      app: ewr
   template:
     metadata:
       labels:
-        app: cvf
+        app: ewr
     spec:
       containers:
-      - image: okteto.dev/cvf:latest
-        name: cvf
+      - image: okteto.dev/ewr:latest
+        name: ewr
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "5b53033c-413e-4409-b513-57b6156a922d"
+          value: "0a8fc5a7-b2f0-4e20-b59f-08c74dc63baa"
         - name: Vless_Path
-          value: "/trydf"
+          value: "/acpourd"
         - name: Vmess_UUID
-          value: "5b53033c-413e-4409-b513-57b6156a922d"
+          value: "0a8fc5a7-b2f0-4e20-b59f-08c74dc63baa"
         - name: Vmess_Path
-          value: "/gyhtry"
+          value: "/ueredeg"
         - name: Share_Path
           value: "/share233"
