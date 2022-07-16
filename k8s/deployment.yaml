@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rg4r
+  name: cvf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rg4r
+      app: cvf
   template:
     metadata:
       labels:
-        app: rg4r
+        app: cvf
     spec:
       containers:
-      - image: okteto.dev/rg4r:latest
-        name: rg4r
+      - image: okteto.dev/cvf:latest
+        name: cvf
         ports:
         - containerPort: 8080
         env:
