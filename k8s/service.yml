@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hun
+  name: bgh
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hun"
+  - name: "bgh"
     port: 8080
   selector:
-    app: hun
+    app: bgh
